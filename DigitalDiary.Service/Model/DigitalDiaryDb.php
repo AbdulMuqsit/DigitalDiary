@@ -1,7 +1,7 @@
 <?php
 
 
-class DigitalDiaryDataContext
+class DigitalDiaryDb
 {
     //credential constants
     const servername  = "localhost";
@@ -9,7 +9,7 @@ class DigitalDiaryDataContext
     const password = "idkwmpsb@3";
 
     //connection
-    private $connection;
+    public $connection;
 
     //constructor
     function __construct(){
@@ -45,18 +45,18 @@ connection = new mysqli(self::servername,self::username,self::password);
     //To create database tables
     private function createTables(){
         $sql='CREATE TABLE IF NOT EXISTS Users(
-            Id INT PRIMARY KEY,
+            Id INT PRIMARY KEY AUTO_INCREMENT,
             UserName  NVARCHAR (20),
             Password  NVARCHAR (20),
             FirstName NVARCHAR (30),
             LastName  NVARCHAR (30),
-            Picture   NVARCHAR (100),
-            PHONE     NVARCHAR (20),
-            ADDRESS   NVARCHAR (255)
+            PictureUri   NVARCHAR (100),
+            Phone    NVARCHAR (20),
+            Address   NVARCHAR (255)
             );
 
             CREATE TABLE IF NOT EXISTS Entries(
-            Id INT PRIMARY KEY,
+            Id INT PRIMARY KEY AUTO_INCREMENT,
             Title  NVARCHAR (255),
             Text   TEXT,
             TIMESTAMP  DATETIME,

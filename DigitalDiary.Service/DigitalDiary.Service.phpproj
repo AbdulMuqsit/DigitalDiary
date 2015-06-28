@@ -16,7 +16,17 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="DigitalDiaryDataContext.php" />
+    <Compile Include="Model\DigitalDiaryDb.php" />
+    <Compile Include="Model\DigitalDiaryDbContext.php" />
     <Compile Include="index.php" />
+    <Compile Include="Model\Entry\EntryRepository.php" />
+    <Compile Include="Model\Entry\Entry.php" />
+    <Compile Include="Model\User\User.php" />
+    <Compile Include="Model\User\UserRepository.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Model\Entry\" />
+    <Folder Include="Model\User\" />
   </ItemGroup>
 </Project>
