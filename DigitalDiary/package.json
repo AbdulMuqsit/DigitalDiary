@@ -1,0 +1,47 @@
+﻿{
+    "name": "DigitalDiary",
+    "preferGlobal": true,
+    "version": "0.3.0",
+    "author": "AbdulMuqsit <abdemuqsit@hotmail.com>",
+    "description": "DigitalDiary Components",
+    "contributors": [
+        {
+            "name": "Abdul Muqsit",
+            "email": "abdemuqsit@hotmail.com"
+        }
+    ],
+    "bin": {
+        "package-name": "./bin/package-name"
+    },
+    "scripts": {
+        "start": "node ./bin/package-name",
+        "test": "vows --spec --isolate",
+        "predeploy": "echo Predeploy",
+        "postdeploy": "echo Postdeploy"
+    },
+    "main": "./lib/package-name",
+    "repository": {
+        "type": "git",
+        "url": "the url of the package"
+    },
+    "keywords": [
+    ],
+    "dependencies": {
+
+
+    },
+    "analyze": false,
+    "devDependencies": {
+        "grunt": "0.4.5",
+        "grunt-contrib-copy": "0.8.0",
+        "grunt-bower-copy ": "0.0.3",
+        "grunt-contrib-concat": "0.5.1",
+        "grunt-contrib-clean": "0.6.0"
+    },
+    "bundledDependencies": [
+    ],
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.6"
+    }
+}
