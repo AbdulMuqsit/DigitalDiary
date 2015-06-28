@@ -59,7 +59,7 @@ connection = new mysqli(self::servername,self::username,self::password);
             Id INT PRIMARY KEY AUTO_INCREMENT,
             Title  NVARCHAR (255),
             Text   TEXT,
-            TIMESTAMP  DATETIME,
+            TimeStamp  DATETIME,
             UserId INT NOT NULL,
 
             FOREIGN KEY (UserId) REFERENCES Users(Id) on delete cascade on update cascade

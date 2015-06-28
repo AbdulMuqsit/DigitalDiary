@@ -11,24 +11,11 @@ require_once('Model/DigitalDiaryDb.php');
 $context = new DigitalDiaryDbContext();
 
 $user = new User();
-$user->address="hello";
-$user->FirstName="wow";
-$user->LastName="wlp";
+$user->address="sdafds";
+$user->FirstName="dfg";
+$user->LastName="hdhdfg";
 
 $context->users->add($user);
-//foreach ($context->users->getAll() as $row) {
-//    foreach ($row as $key=>$value)
-//    {
-//        echo "$value    ";
-//    }
-
-//}
-foreach ($context->users->where('Id','4') as $row) {
-    foreach ($row as $key=>$value)
-    {
-    	echo "$value    ";
-    }
-
-}
-
+$context->users->update(3,$user);
+$context->users->delete(4);
 ?>
