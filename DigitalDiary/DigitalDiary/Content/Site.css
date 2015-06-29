@@ -1,0 +1,78 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background-image:url(../../Resources/background.jpg)
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    background: rgb(10, 185, 180);
+    padding: 0.1em;
+    text-align: center;
+    box-shadow: 0 1px 2px 4px #808080;
+    box-shadow: 0 1px 1px 3px rgba(128, 128, 128, 0.46);
+}
+
+nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+        nav ul li {
+            display: inline;
+            background: rgb(10, 185, 180);
+        }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-family: Open Sans, helvetica, sans-serif;
+    }
+
+#title {
+    color: transparent;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 45%;
+}
+
+    #title img {
+        margin-top: 5px;
+    }
+
+#navLeft {
+    float: left;
+    margin: 0 20px;
+}
+
+    #navLeft a {
+        color: transparent;
+        margin: 0 20px 0 0;
+    }
+
+    #navLeft img {
+        width: 20px;
+        height: 15px;
+        padding: 0.6em 0 0.4em 0;
+    }
+
+#navRight {
+    padding: 0.6em 0 0 0;
+    float: right;
+    margin: 1px 20px;
+}
+
+    #navRight li {
+        border-left: 1px rgb(0, 145, 145) solid ;
+        padding: 0.3em 0.8em;
+    }
+
+#navLeft li:last-of-type img {
+    height: 18px;
+}
