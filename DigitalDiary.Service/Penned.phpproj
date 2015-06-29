@@ -40,15 +40,31 @@
     <Folder Include="Model\User\" />
     <Folder Include="Content\" />
     <Folder Include="Api\" />
+    <Folder Include="Scripts\Diary\" />
+    <Folder Include="Scripts\Diary\turnjs\" />
+    <Folder Include="Views\" />
     <Folder Include="Scripts\" />
     <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bower.json" />
+    <Content Include="Content\Diary.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="package.json" />
     <Content Include="Resources\background.jpg" />
     <Content Include="Resources\home.png" />
     <Content Include="Resources\Menu.png" />
     <Content Include="Resources\Title-Small.png" />
     <Content Include="Resources\Title.png" />
+    <Content Include="Scripts\Diary\turnjs\Diary.js" />
+    <Content Include="Scripts\Diary\turnjs\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="Scripts\Diary\turnjs\jquery.js" />
+    <Content Include="Scripts\Diary\turnjs\jquery.mousewheel.min.js" />
+    <Content Include="Scripts\Diary\turnjs\hash.js" />
+    <Content Include="Scripts\Diary\turnjs\modernizr.js" />
+    <Content Include="Scripts\Diary\turnjs\turn.js" />
+    <Content Include="Scripts\Diary\turnjs\zoom.js" />
+    <Content Include="Views\DiaryView.html" />
   </ItemGroup>
 </Project>
