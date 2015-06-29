@@ -2,12 +2,20 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Name>DigitalDiary.Service</Name>
+    <Name>Penned</Name>
     <ProjectGuid>ea775405-cc00-4f8f-a7b8-308e4a15826d</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>DigitalDiary.Service</RootNamespace>
     <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
     <AssemblyName>DigitalDiary.Service</AssemblyName>
+    <ProjectHome />
+    <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+    <Server>PHPDev</Server>
+    <PublishEvent>None</PublishEvent>
+    <PHPDevAutoPort>True</PHPDevAutoPort>
+    <PHPDevPort>28852</PHPDevPort>
+    <PHPDevHostName>localhost</PHPDevHostName>
+    <IISProjectUrl>http://localhost:28852/</IISProjectUrl>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <IncludeDebugInformation>true</IncludeDebugInformation>
@@ -16,9 +24,11 @@
     <IncludeDebugInformation>false</IncludeDebugInformation>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Api\Entries.php" />
+    <Compile Include="Api\Users.php" />
     <Compile Include="Model\DigitalDiaryDb.php" />
     <Compile Include="Model\DigitalDiaryDbContext.php" />
-    <Compile Include="index.php" />
+    <Compile Include="index.html" />
     <Compile Include="Model\Entry\EntryRepository.php" />
     <Compile Include="Model\Entry\Entry.php" />
     <Compile Include="Model\User\User.php" />
@@ -29,8 +39,16 @@
     <Folder Include="Model\Entry\" />
     <Folder Include="Model\User\" />
     <Folder Include="Content\" />
+    <Folder Include="Api\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Site.css" />
+    <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\home.png" />
+    <Content Include="Resources\Menu.png" />
+    <Content Include="Resources\Title-Small.png" />
+    <Content Include="Resources\Title.png" />
   </ItemGroup>
 </Project>

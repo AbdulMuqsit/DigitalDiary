@@ -4,8 +4,7 @@ class UserRepository
 {
     private $connection;
     function __construct($database){
-        $this->
-connection = $database->connection;
+        $this->connection = $database->connection;
     }
 
     public function add(User $user){

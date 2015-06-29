@@ -11,9 +11,9 @@ class DigitalDiaryDbContext
     private $database;
     //constructor
     function __construct(){
-        $database = new DigitalDiaryDb();
-        $this->users = new UserRepository( $database);
-        $this->entries = new EntryRepository($database);
+        $this->database = new DigitalDiaryDb();
+        $this->users = new UserRepository( $this->database);
+        $this->entries = new EntryRepository($this->database);
 
     }
 
