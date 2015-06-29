@@ -242,14 +242,14 @@ function isChrome() {
 
 
 
-function loadApp() {
+function loadDiary() {
 
 	var flipbook = $('.sj-book');
 
 	// Check if the CSS was already loaded
 
 	if (flipbook.width() == 0 || flipbook.height() == 0) {
-		setTimeout(loadApp, 10);
+		setTimeout(loadDiary, 10);
 		return;
 	}
 
@@ -486,4 +486,3 @@ function loadApp() {
 
 $('#canvas').css({ visibility: 'hidden' });
 
-loadApp();

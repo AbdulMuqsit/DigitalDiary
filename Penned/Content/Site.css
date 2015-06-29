@@ -1,7 +1,7 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-image:url(../../Resources/background.jpg)
+    background-image:url(../Resources/background.jpg)
 }
 
 nav {
@@ -12,6 +12,8 @@ nav {
     text-align: center;
     box-shadow: 0 1px 2px 4px #808080;
     box-shadow: 0 1px 1px 3px rgba(128, 128, 128, 0.46);
+    top: 0;
+
 }
 
 nav ul {
