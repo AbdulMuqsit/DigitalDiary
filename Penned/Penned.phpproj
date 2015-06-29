@@ -54,8 +54,13 @@
     <Content Include="Gruntfile.js" />
     <Content Include="package.json" />
     <Content Include="Resources\background.jpg" />
+    <Content Include="Resources\book-covers.png" />
+    <Content Include="Resources\gradient-page-left.jpg" />
+    <Content Include="Resources\gradient-page-right.jpg" />
     <Content Include="Resources\home.png" />
+    <Content Include="Resources\loader.gif" />
     <Content Include="Resources\Menu.png" />
+    <Content Include="Resources\pages-depth.png" />
     <Content Include="Resources\Title-Small.png" />
     <Content Include="Resources\Title.png" />
     <Content Include="Scripts\App\Login.js" />
