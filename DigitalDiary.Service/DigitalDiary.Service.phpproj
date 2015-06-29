@@ -28,5 +28,9 @@
     <Folder Include="Model\" />
     <Folder Include="Model\Entry\" />
     <Folder Include="Model\User\" />
+    <Folder Include="Content\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Site.css" />
   </ItemGroup>
 </Project>
