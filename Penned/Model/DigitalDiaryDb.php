@@ -1,5 +1,6 @@
 <?php
-
+//Database Access Layer, initializes database connection
+//and creates database tables if they do not already exist
 
 class DigitalDiaryDb
 {
@@ -11,7 +12,7 @@ class DigitalDiaryDb
     //connection
     public $connection;
 
-    //constructor
+    //constructor initialezes a conneciton
     function __construct(){
         $this->
 connection = new mysqli(self::servername,self::username,self::password);

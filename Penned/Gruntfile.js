@@ -1,4 +1,8 @@
-﻿/*global module */
+﻿//grunt configuration files
+//ignore this
+
+
+/*global module */
 module.exports = function (grunt) {
     'use strict';
     grunt.initConfig({

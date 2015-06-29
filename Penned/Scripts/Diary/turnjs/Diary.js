@@ -1,4 +1,8 @@
 ﻿
+//this is just the code provided by turnjs samples,
+//only God understands what's happeing in here
+
+
 function updateDepth(book, newPage) {
 
     var page = book.turn('page'),

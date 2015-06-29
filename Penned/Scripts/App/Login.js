@@ -1,4 +1,6 @@
-﻿(function () {
+﻿
+//After authentication, load user's diary
+(function () {
     document.getElementById('login').onclick = function () {
         var receiveReq = new XMLHttpRequest();
 

@@ -1,21 +1,24 @@
+//bower configuraiton file
+//ignore it
+
 {
-  "name": "Penned",
-  "version": "1.0",
-  "authors": [
-    "Abdul Muqsit"
-  ],
-  "description": "Online Digital Diary",
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "jquery": "2.1.4",
-    "modernizer": "2.8.2"
-  }
+    "name": "Penned",
+    "version": "1.0",
+    "authors": [
+        "Abdul Muqsit"
+    ],
+    "description": "Online Digital Diary",
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "jquery": "2.1.4",
+        "modernizer": "2.8.2"
+    }
 }

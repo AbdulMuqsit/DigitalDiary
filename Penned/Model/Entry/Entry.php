@@ -1,5 +1,5 @@
 <?php
-
+//The domain model Entry
 class Entry
 {
     public $title;
