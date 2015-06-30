@@ -1,7 +1,8 @@
 ﻿body {
     margin: 0;
     padding: 0;
-    background-image:url(../Resources/background.jpg)
+    background-image: url(../Resources/background.jpg);
+    font-family: serif;
 }
 
 nav {
@@ -84,4 +85,62 @@ nav ul {
 
 #navLeft li:last-of-type img {
     height: 18px;
+}
+
+#index {
+    width: 420px;
+    height: 600px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+#index img {
+    width: 250px;
+    margin: 50px auto;
+}
+#authentication form{
+    box-shadow: 0 1px 1px 3px #808080;
+    box-shadow: 0 1px 1px 3px rgba(128, 128, 128, 0.46);
+
+}
+#authentication input
+{
+    left: 0;
+    color: gray;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    text-decoration: none;
+    vertical-align: middle;
+    display: inline-block;
+
+    margin: 2px auto;
+    width: 400px;
+}
+
+#authentication input[type=button] {
+    border: none;
+    margin: 10px auto 10px auto;
+    background: rgb(54, 125, 193);
+    color: white;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 15px;
+    width: 100px;
+    box-shadow: 0 1px 1px 3px #808080;
+    box-shadow: 0 1px 1px 3px rgb(34, 112, 186);
+    cursor: pointer;
+}
+
+#authentication p {
+    margin: 0 auto 10px;
+    color: gray;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }

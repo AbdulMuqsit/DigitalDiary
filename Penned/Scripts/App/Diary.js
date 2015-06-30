@@ -20,6 +20,8 @@ function setUp() {
             function handle() {
                 if (xhr.readyState == 4) {
                     var entries = JSON.parse(xhr.response);
+
+
                     var htmlString = "";
                     for (var key in entries) {
                         var entry = entries[key];
@@ -37,7 +39,7 @@ function setUp() {
 
                         htmlString += '<div class="entry">' +
                                         '<h2>' + entry.Title + '</h2>' +
-                                        '<p>' + day + ', ' + date + '/' + month + '/' + year+ '</p>' +
+                                        '<p>' + day + ', ' + date + '/' + month + '/' + year + '</p>' +
                                       '</div>';
                     }
                     document.getElementById('entries').innerHTML = htmlString;
@@ -47,4 +49,5 @@ function setUp() {
 
         }
     };
+
 };

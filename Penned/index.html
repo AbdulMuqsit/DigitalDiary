@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>PEND</title>
+    <title>Penned</title>
     <link href="Content/Site.css" rel="stylesheet" />
     <link href="Content/Diary.css" rel="stylesheet" />
-
+    <script src="Scripts/ckeditor/ckeditor.js"></script>
+    <script>
+        window.CKEDITOR_BASEPATH = 'Scripts/ckeditor/ckeditor.js';
+    </script>
 </head>
 <body id="body">
     <div id="content">
-        <a id="login">Login</a>
+        <div id="index">
+            <img src="Resources/Logo.png" />
+            <div id="authentication">
+                <form>
+                    <input type="text" placeholder="Email" />
+                    <input type="password" placeholder="Password" />
+                    <input id="login" onsubmit="event.preventDefault();" type="button" value="Snign In" />
+
+                    <p>Do not have an account yet?  <a href="#">Sign Up</a></p>
+
+                </form>
+
+            </div>
+        </div>
     </div>
 
     <!--turn js scripts (scripts for the flipbook animations)-->
@@ -20,11 +36,12 @@
     <script src="Scripts/Diary/turnjs/jquery-ui-1.8.20.custom.min.js"></script>
     <script src="Scripts/Diary/turnjs/Diary.js"></script>
 
-
-
     <!-- Application Scripts -->
     <script src="Scripts/App/Diary.js"></script>
     <script src="/Scripts/App/Index.js"></script>
+
+    <!--ck editor-->
+
 
 </body>
 </html>
