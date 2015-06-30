@@ -91,7 +91,8 @@ class EntryController
         }
 
         header('Content-Type: application/json');
-        echo json_encode($result);
+        $result = json_encode($result);
+        echo $result;
 
     }
 }
