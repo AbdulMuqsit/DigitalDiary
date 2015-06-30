@@ -39,7 +39,7 @@ function loadPage(page) {
 
     $.ajax({ url: 'Api/Users.php' }).
 		done(function (pageHtml) {
-		    $('.sj-book .p' + page).html('<div>' +
+		    $('.sj-book .p' + page).html('<input type="text" id="titleInput" placeholder="Title"></input><div>' +
     '<textarea class="' + classname + '" placeholder="Click here to add text" rows="10" cols="80" id="editor' + page + '" onclick="activateEditor(editor' + page + ')"></textarea>' +
 '</div>)');
 		});
