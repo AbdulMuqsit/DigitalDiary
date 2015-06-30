@@ -32,18 +32,46 @@ function updateDepth(book, newPage) {
 }
 
 function loadPage(page) {
+    var classname = 'text-left';
+    if (page % 2 == 0) {
+        classname = 'text-right';
+    }
 
     $.ajax({ url: 'Api/Users.php' }).
 		done(function (pageHtml) {
 		    $('.sj-book .p' + page).html('<div>' +
-    '<textarea class="text" placeholder="Click here to add text" rows="10" cols="80" id="editor' + page + '" onclick="activateEditor(editor' + page + ')"></textarea>' +
+    '<textarea class="' + classname + '" placeholder="Click here to add text" rows="10" cols="80" id="editor' + page + '" onclick="activateEditor(editor' + page + ')"></textarea>' +
 '</div>)');
 		});
 
 }
+
 function activateEditor(editor) {
-    CKEDITOR.replace(editor);
+
+
+    CKEDITOR.disableAutoInline = true;
+    CKEDITOR.replace(editor, {
+        // Configure CKEditor to use the Shared Space plugin.
+        extraPlugins: 'sharedspace',
+        // The Resize plugin does not make sense in this context.
+        removePlugins: 'resize, elementspath',
+        height: '600px',
+        width: '450px',
+
+
+        sharedSpaces: {
+            // Configure the editor instance to place the toolbar in the div id='bar'.
+            top: 'bar'
+        }
+    });
+    CKEDITOR.on('instanceReady', function (e) {
+        $('.cke_top').css('background', 'transparent').css('box-shadow', 'box-shadow: 0 1px 1px 3px rgba(128, 128, 128, 0.46);');
+        $('.cke_toolbar').css('background', 'transparent');
+        $('.cke_inner').css('background', 'transparent');
+        $('#navbar').css('box-shadow', 'none');
+    });
 }
+
 function addPage(page, book) {
 
     var id, pages = book.turn('pages');

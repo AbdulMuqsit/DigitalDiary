@@ -18,7 +18,15 @@ nav {
     top: 0;
 
 }
-
+.cke_toolbar {
+    background: transparent;
+}
+.cke_top {
+    background: transparent;
+}
+.cke_inner {
+    background: transparent;
+}
 nav ul {
         margin: 0;
         padding: 0;
@@ -90,13 +98,13 @@ nav ul {
 #index {
     width: 420px;
     height: 600px;
-    margin: auto;
+    margin: 50px auto;
     text-align: center;
     vertical-align: middle;
 }
 #index img {
     width: 250px;
-    margin: 50px auto;
+    margin: 100px auto;
 }
 #authentication form{
     box-shadow: 0 1px 1px 3px #808080;
@@ -111,7 +119,7 @@ nav ul {
     font-size: 20px;
     background: transparent;
     border: none;
-    border-bottom: 2px solid gray;
+    border-bottom: 1px solid rgb(168, 168, 168);
     text-decoration: none;
     vertical-align: middle;
     display: inline-block;
@@ -142,5 +150,5 @@ input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+    outline: none !important;
 }

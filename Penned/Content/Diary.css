@@ -70,7 +70,25 @@
     }
 
 
-
+.cke_focus{
+   outline: none !important;
+    border: none;
+}
+.cke_chrome {
+    border: none !important;
+}
+.cke_focused {
+    outline: none !important;
+    border: none !important;
+}
+.ckeditor {
+    outline: none !important;
+    border: none !important;
+}
+div[contenteditable] {
+    outline: none !important;
+    border: none !important;
+}
 @font-face {
     font-family: 'Stempel-Garamond-W01-Roman';
     font-style: normal;
@@ -300,10 +318,16 @@ body, ul, table, form {
     background-position: -480px 0 !important;
 }
 
-.text {
-    height: 582px;
+.text-right {
+    height: 570px;
     width: 350px;
     border: none;
+}
+.text-left {
+     height: 570px;
+    width: 350px;
+    border: none;
+    float: left;
 }
 textarea {
     border-style: none;
