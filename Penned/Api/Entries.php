@@ -46,7 +46,7 @@ class EntryController
                 }
                 //get request and no parameter means request to get all entries
                 else if(count($parameters)==0){
-                    $result = $this->context->entries->get();
+                    $result = $this->context->entries->getAll();
                 }
                 //get request and 2 quary string parameters means a filter request over the entries
                 else if(count($parameters)==2){

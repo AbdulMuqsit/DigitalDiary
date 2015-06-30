@@ -63,7 +63,8 @@
     <Content Include="Resources\pages-depth.png" />
     <Content Include="Resources\Title-Small.png" />
     <Content Include="Resources\Title.png" />
-    <Content Include="Scripts\App\Login.js" />
+    <Content Include="Scripts\App\Diary.js" />
+    <Content Include="Scripts\App\Index.js" />
     <Content Include="Scripts\Diary\turnjs\Diary.js" />
     <Content Include="Scripts\Diary\turnjs\jquery-ui-1.8.20.custom.min.js" />
     <Content Include="Scripts\Diary\turnjs\jquery.js" />
@@ -72,6 +73,6 @@
     <Content Include="Scripts\Diary\turnjs\modernizr.js" />
     <Content Include="Scripts\Diary\turnjs\turn.js" />
     <Content Include="Scripts\Diary\turnjs\zoom.js" />
-    <Content Include="Views\DiaryView.html" />
+    <Content Include="Views\Diary.html" />
   </ItemGroup>
 </Project>

@@ -43,7 +43,7 @@ class UserController
                 //get request and no parameter means request to get all users
 
                 else if(count($parameters)==0){
-                    $result = $this->context->users->get();
+                    $result = $this->context->users->getAll();
                 }
                 //get request and 2 query string parameters means a filter request over users
                 else if(count($parameters)==2){
