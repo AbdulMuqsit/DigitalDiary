@@ -9,13 +9,14 @@ class DigitalDiaryDb
     const username = "root";
     const password = "idkwmpsb@3";
 
+
     //connection
     public $connection;
 
     //constructor initialezes a conneciton
     function __construct(){
         $this->
-connection = new mysqli(self::servername,self::username,self::password);
+connection = new mysqli(self::servername,self::username, self::password);
         if ($this->connection->connect_error) {
             die("Connection failed: " . $this->connection->connect_error);
         }
